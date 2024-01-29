@@ -1,16 +1,16 @@
 from utils.load_json import load_operations
 
 
-def operation():
+def operation(filename):
     '''Чтение файла'''
-    operations = load_operations()
+    operations = load_operations('../operations.json')
     return operations
 
 
 def operation_executed(data):
     '''Поиск одобренных операций'''
     operation_executed_ = []
-    operation_equail = operation()
+    operation_equail = operation('../operations.json')
     for i in operation_equail:
         if i.get("state") == "EXECUTED":
             operation_executed_.append(i)

@@ -1,12 +1,12 @@
 import json
 
 
-def load_operations():
+def load_operations(filename):
     """
     Загружает список операций из файла
 
     """
-    with open("../operations.json", "r", encoding="utf-8") as file:
+    with open(filename, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
