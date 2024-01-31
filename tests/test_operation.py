@@ -9,7 +9,6 @@ def test_operation_executed():
     print(operation_executed(operation))
 
 
-
 def test_last_five_operations():
     dates = [elem["date"] for elem in last_five_operations(operations)]
     print(dates)
@@ -23,4 +22,3 @@ def test_last_five_operations():
 def test_parse_operations_data():
     assert parse_operations_data(operations)
     print(parse_operations_data(operations))
-
