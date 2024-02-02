@@ -22,5 +22,13 @@ def test_last_five_operations():
 
 
 def test_parse_operations_data():
-    assert parse_operations_data(operations)
-    print(parse_operations_data(operations))
+    oper = []
+    for elem in parse_operations_data(operations):
+        oper.append(elem)
+    print(oper[0])
+    assert oper[0] == ('29.12.2018 Перевод организации\n'
+                      'Счет 7797 75** **** 1529 -> Счет **1891\n'
+                      '66263.93 руб.')
+
+
+
