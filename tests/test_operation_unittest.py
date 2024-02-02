@@ -7,8 +7,8 @@ from utils.utils_operation import operation_executed, last_five_operations, pars
 operation = 'tests.operations.json'
 
 
-class Testtions(unittest.TestCase):
-
+class TestOperations(unittest.TestCase):
+  
     def test_operation_executed(self):
         assert operation_executed(operation) == [{'state': 'EXECUTED'}, {'state': 'EXECUTED'}, {'state': 'EXECUTED'}]
         print(operation_executed(operation))

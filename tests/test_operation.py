@@ -11,7 +11,6 @@ def test_operation_executed():
                                              {'state': 'EXECUTED'},
                                              {'state': 'EXECUTED'}]
 
-
 def test_last_five_operations():
     dates = [elem["date"] for elem in last_five_operations(operations)]
     print(dates)
